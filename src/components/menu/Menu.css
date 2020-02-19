@@ -21,3 +21,15 @@
 .menu-secondary:hover  {
     color: #48842e;
 }
+
+#root {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    align-self: center;
+}

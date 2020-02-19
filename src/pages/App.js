@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Cover />
-    <Section />
+;    <Section />
     <Footer />
   
     </>

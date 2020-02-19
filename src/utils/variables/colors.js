@@ -1,0 +1,1 @@
+export const Theme = '#3d9970';

@@ -16,7 +16,7 @@ function Footer () {
           <div className="container">
             <div className="row">
               <div className="col-sm-2 col-md-2 text-center">
-                <img src="https://scontent.fvdc1-1.fna.fbcdn.net/v/t1.0-9/78411263_2753399211382885_5854931887859957760_n.jpg?_nc_cat=109&_nc_ohc=Msa1HmRT5wAAX8Z3von&_nc_ht=scontent.fvdc1-1.fna&oh=ce14423b12b9b4a5a9b489a06b2de1a8&oe=5EBF1565" className="center-block img-circle img-responsive" width="100" />
+                <img alt="user" src="https://scontent.fvdc1-1.fna.fbcdn.net/v/t1.0-9/78411263_2753399211382885_5854931887859957760_n.jpg?_nc_cat=109&_nc_ohc=Msa1HmRT5wAAX8Z3von&_nc_ht=scontent.fvdc1-1.fna&oh=ce14423b12b9b4a5a9b489a06b2de1a8&oe=5EBF1565" className="center-block img-circle img-responsive" width="100" />
                 <h3 className="text-center">Randler</h3>
                 <p className="text-center">Desenvolvedor</p>
                 <a href="https://www.facebook.com/randlerferraz"><i className="fa fa-2x fa-facebook fa-fw text-inverse"></i></a>

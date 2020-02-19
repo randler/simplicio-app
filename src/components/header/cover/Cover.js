@@ -1,7 +1,14 @@
-import React from 'react';
-import { BackgroungImageBus } from '../style';
+import React, { useState } from 'react';
+import { BackgroungImageBus, ContainerLogin } from '../style';
+import { Modal, Button } from 'react-bootstrap';
 
 function Cover() {
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    
   return (
     <>
         <div className="cover">
@@ -26,17 +33,42 @@ function Cover() {
         </div>
         </div>
         <BackgroungImageBus className="cover-image" />
-        <div className="container">
+        <ContainerLogin className="container">
             <div className="row">
             <div className="col-md-12 text-center">
                 <h1 className="text-inverse">Simplício</h1>
                 <p className="text-inverse">Fique por dentro da sua vaga e garanta o seu direito!</p>
                 <br />
                 <br />
-                <a className="btn btn-lg btn-primary" data-toggle="modal" href="pageList/list.html">Entrar</a>
+                <Button variant="primary" onClick={handleShow}>
+                    Entrar
+                </Button>
             </div>
         </div>
-        </div>
+        </ContainerLogin>
+        <Modal 
+            show={show}
+            size='sm' 
+            onHide={handleClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>Entrar</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <div class="form-group">
+                <label class="control-label" for="exampleInputEmail1">Login</label>
+                <input class="form-control" id="exampleInputEmail1" placeholder="Digite o seu Login" type="email" />
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="exampleInputPassword1">Senha</label>
+                <input class="form-control" id="exampleInputPassword1" placeholder="Digite sua Senha" type="password" />
+              </div>
+            </Modal.Body>
+            <Modal.Footer>
+            <Button variant="primary" onClick={handleClose}>
+                Entrar
+            </Button>
+            </Modal.Footer>
+        </Modal>
     </>
   );
 }

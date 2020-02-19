@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 
 // importing css
 
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './assets/bootstrap/css/bootstrap.css';
-import './assets/bootstrap/css/bootstrap.css.map';
 
 
 import './assets/css/index.css';
-import './assets/css/index.css';
+import './index.css';
 
 import App from './pages/App';
 
